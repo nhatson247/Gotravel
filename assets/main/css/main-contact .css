@@ -15,7 +15,7 @@
 .home__background{
     background-repeat: no-repeat;
     background-position: center center;
-    background: url(./img/contact_bg.jpg);
+    background: url(../img/contact_bg.jpg);
     background-size: cover;
 }
 .home__title{

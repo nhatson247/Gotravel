@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+  <div class="main">
+    <form action="" method="POST" class="form" id="form-1">
+      <h3 class="heading">Đăng nhập</h3>
+  
+      <div class="spacer"></div>
+  
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+        <span class="form-message"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+        <span class="form-message"></span>
+      </div>
+  
+
+      <button class="form-submit">Đăng nhập</button>
+      <div class="Register__item--btn">
+        <div class="Register__btn__bgc"></div>
+        <a  href="../index.html">Exits</a></div>
+    </form>
+    <script src="main.js"></script>
+
+    <script>
+      // mong muon cua thu vien 
+    Validator({
+      form: '#form-1',
+      formGroupSelector: '.form-group',
+      errorSelector: '.form-message',
+      rules: [
+        Validator.isRequired('#email'),
+        Validator.isEmail('#email'),
+        Validator.isConfirmed('#password_confirmation', function(){
+          return document.querySelector('#form-1 #password').value;
+        }, 'Mật khẩu nhập lại không chính xác')
+      ],
+      onSubmit: function(data){
+        console.log(data)
+      }
+    })
+  
+    </script>
+  </div>
+</body>
+</html>

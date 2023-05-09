@@ -16,9 +16,8 @@
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-   
     background-position: center center;
-    background: linear-gradient(rgba(64, 6, 97, 0.3), rgba(64, 6, 97, 0.4)), url(./img/2.webp);
+    background: linear-gradient(rgba(64, 6, 97, 0.3), rgba(64, 6, 97, 0.4)), url(../img/2.webp);
     background-size: cover;
 }
 .search__container{

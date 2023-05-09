@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background: linear-gradient(rgba(64, 6, 97, 0.3), rgba(64, 6, 97, 0.4)), url(./img/Turkey-Turkish-Cappadocia-hot-air-balloons-1149868-wallhere.com.jpg);
+    background: linear-gradient(rgba(64, 6, 97, 0.3), rgba(64, 6, 97, 0.4)), url(../img/Turkey-Turkish-Cappadocia-hot-air-balloons-1149868-wallhere.com.jpg);
 }
 
 .home__title{
@@ -170,7 +170,7 @@
     float: right;
 }
 .sale__container__content{
-    background: url(./img/xadd.jpg.pagespeed.ic.GcGK49YYUj.webp);
+    background: url(../img/xadd.jpg.pagespeed.ic.GcGK49YYUj.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
